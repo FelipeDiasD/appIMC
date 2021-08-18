@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="@string/calculadora_imc"
+        android:layout_above="@id/campoNome"
+        android:layout_alignStart="@id/campoNome"
+
+        style="@style/TituloAzul" />
+
+
+    <EditText
+        android:id="@+id/campoNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_centerInParent="true"
+        android:ems="5"
+        android:inputType="numberDecimal"
+        android:hint="Peso (Kg)" />
+
+    <EditText
+        android:id="@+id/campoAltura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_below="@id/campoNome"
+        android:ems="5"
+        android:inputType="numberDecimal"
+        android:hint="Altura (cm)" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/BotaoIMC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcula"
+        android:layout_alignEnd="@id/campoAltura"
+        android:layout_alignStart="@id/campoAltura"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
